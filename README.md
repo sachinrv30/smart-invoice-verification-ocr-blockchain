@@ -643,57 +643,109 @@ This prevents database passwords from being directly stored in the source code.
 
 ---
 
-# 🖥️ Screenshots
+## 📸 Application Screenshots
 
 ### 🔐 Employee Login
 
-Add your project screenshot here:
-
-```text
-docs/screenshots/login.png
-```
-
-### 📊 Dashboard
-
-```text
-docs/screenshots/dashboard.png
-```
-
-### 🔎 OCR Extraction
-
-```text
-docs/screenshots/ocr.png
-```
-
-### ⛓️ Blockchain Verification
-
-```text
-docs/screenshots/blockchain.png
-```
-
-### ⚠️ Fraud Detection
-
-```text
-docs/screenshots/fraud.png
-```
-
-### 📈 Analytics
-
-```text
-docs/screenshots/analytics.png
-```
-
-### 📄 Reports
-
-```text
-docs/screenshots/reports.png
-```
-
-> Replace these placeholders with your actual screenshots when you upload them to GitHub.
+<p align="center">
+  <img src="docs/screenshots/login.png" alt="Employee Login" width="900">
+</p>
 
 ---
 
-# 👨‍💻 Administrator Portal
+### 📝 Employee Registration
+
+<p align="center">
+  <img src="docs/screenshots/register.png" alt="Employee Registration" width="900">
+</p>
+
+---
+
+### 🏠 SmartLedger AI Dashboard
+
+<p align="center">
+  <img src="docs/screenshots/dashboard.png" alt="SmartLedger AI Dashboard" width="900">
+</p>
+
+---
+
+### 📤 Upload Invoice
+
+<p align="center">
+  <img src="docs/screenshots/upload-invoice.png" alt="Upload Invoice" width="900">
+</p>
+
+---
+
+### 🔎 OCR Invoice Extraction
+
+<p align="center">
+  <img src="docs/screenshots/ocr-result.png" alt="OCR Invoice Extraction" width="900">
+</p>
+
+---
+
+### 🧾 Invoice Management
+
+<p align="center">
+  <img src="docs/screenshots/invoice-management.png" alt="Invoice Management" width="900">
+</p>
+
+---
+
+### ⛓️ Blockchain Verification
+
+<p align="center">
+  <img src="docs/screenshots/blockchain.png" alt="Blockchain Verification" width="900">
+</p>
+
+---
+
+### 🛡️ AI Fraud Detection
+
+<p align="center">
+  <img src="docs/screenshots/fraud-detection.png" alt="AI Fraud Detection" width="900">
+</p>
+
+---
+
+### 📊 Analytics Dashboard
+
+<p align="center">
+  <img src="docs/screenshots/analytics.png" alt="Analytics Dashboard" width="900">
+</p>
+
+---
+
+### 📑 Reports
+
+<p align="center">
+  <img src="docs/screenshots/reports.png" alt="Reports" width="900">
+</p>
+
+---
+
+### 👤 User Profile
+
+<p align="center">
+  <img src="docs/screenshots/profile.png" alt="User Profile" width="900">
+</p>
+
+---
+
+### 🔑 Administrator Login
+
+<p align="center">
+  <img src="docs/screenshots/admin-login.png" alt="Administrator Login" width="900">
+</p>
+
+---
+
+### ℹ️ About System
+
+<p align="center">
+  <img src="docs/screenshots/about-system.png" alt="About SmartLedger AI" width="900">
+</p>
 
 The project currently includes an **Administrator Login interface**.
 
