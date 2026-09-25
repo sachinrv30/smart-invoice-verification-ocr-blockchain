@@ -1,29 +1,33 @@
+Absolutely. Below is the **complete README.md in one single copy-paste block**. Replace your entire current `README.md` with this.
 
+**Important:** Copy from `<div align="center">` all the way to the final `</div>`. Do **not** add another ` ```markdown ` before or after it.
 
 ````markdown
 <div align="center">
 
 # 🚀 SmartLedger AI
 
-### 🔐 Smart Invoice Verification System using OCR, AI & Blockchain
+### 🔐 Smart Invoice Verification System using OCR, AI & Blockchain-Inspired Security
 
-**Transforming invoice verification from a manual process into an intelligent, secure and automated workflow.**
+**Turning invoice verification into an intelligent, secure and automated workflow.**
 
 <p>
   <img src="https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=openjdk" alt="Java 17">
-  <img src="https://img.shields.io/badge/Swing-GUI-blue?style=for-the-badge" alt="Java Swing">
+  <img src="https://img.shields.io/badge/Java%20Swing-GUI-blue?style=for-the-badge" alt="Java Swing">
   <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
   <img src="https://img.shields.io/badge/OCR-Invoice%20Extraction-green?style=for-the-badge" alt="OCR">
-  <img src="https://img.shields.io/badge/Blockchain-SHA--256-purple?style=for-the-badge" alt="Blockchain">
-  <img src="https://img.shields.io/badge/AI-Fraud%20Detection-red?style=for-the-badge" alt="AI">
+  <img src="https://img.shields.io/badge/AI-Fraud%20Detection-purple?style=for-the-badge" alt="AI">
+  <img src="https://img.shields.io/badge/SHA--256-Integrity%20Verification-red?style=for-the-badge" alt="SHA-256">
+  <img src="https://img.shields.io/badge/Maven-Build-orange?style=for-the-badge&logo=apachemaven" alt="Maven">
 </p>
 
 <p>
-  <a href="#-about-the-project">About</a> •
+  <a href="#-overview">Overview</a> •
   <a href="#-key-features">Features</a> •
-  <a href="#-how-it-works">How It Works</a> •
+  <a href="#-system-workflow">Workflow</a> •
+  <a href="#-architecture">Architecture</a> •
   <a href="#-technology-stack">Technology</a> •
-  <a href="#-project-structure">Structure</a> •
+  <a href="#-screenshots">Screenshots</a> •
   <a href="#-installation">Installation</a> •
   <a href="#-future-scope">Future Scope</a>
 </p>
@@ -32,85 +36,86 @@
 
 ---
 
-## 🧠 About the Project
+# 🧠 Overview
 
-**SmartLedger AI** is an intelligent desktop-based **Smart Invoice Verification System** developed to simplify and secure the invoice verification process.
+**SmartLedger AI** is a Java-based desktop application designed to simplify and strengthen the invoice verification process.
 
-Traditional invoice verification often involves manual data entry, document inspection, duplicate checking and verification of invoice authenticity. These activities can consume significant time and may introduce human errors.
+The system combines **OCR-based invoice extraction, AI-assisted fraud analysis, invoice validation, blockchain-inspired hash verification, secure authentication, analytics and reporting** into a centralized workflow.
 
-SmartLedger AI combines:
+Instead of relying completely on manual invoice inspection, SmartLedger AI provides a structured process for:
 
-- 🔎 **OCR** for automatic invoice data extraction
-- 🤖 **AI-based analysis** for suspicious and duplicate invoice detection
-- ⛓️ **Blockchain-inspired hash verification** for maintaining invoice integrity
-- 🔐 **Secure authentication** for employee access
-- 📊 **Analytics** for monitoring invoice activity
-- 📄 **Report generation** for business and verification records
-- 🗄️ **MySQL** for persistent data storage
+```text
+📄 Invoice
+    ↓
+🔎 OCR Extraction
+    ↓
+📋 Data Validation
+    ↓
+🤖 AI-Assisted Analysis
+    ↓
+🛡️ Fraud / Suspicious Detection
+    ↓
+⛓️ Hash-Based Integrity Verification
+    ↓
+📊 Dashboard & Analytics
+    ↓
+📑 Reports
+````
 
-The goal is to provide a centralized platform where invoices can be uploaded, processed, validated, verified and monitored through an easy-to-use interface.
+> **Note:** The blockchain component is a local, blockchain-inspired hash-chain integrity mechanism. It is not a distributed public blockchain network.
 
 ---
 
-# 🎯 Why SmartLedger AI?
+# 🎯 The Problem
 
-### The Problem
+Traditional invoice verification can involve:
 
-Manual invoice verification can involve:
+* Manual data entry
+* Manual document inspection
+* Duplicate invoice checking
+* Authenticity verification
+* Fraud investigation
+* Record maintenance
+* Repetitive administrative work
 
-```text
-Invoice
-   ↓
-Manual Data Entry
-   ↓
-Manual Verification
-   ↓
-Duplicate Checking
-   ↓
-Fraud Investigation
-   ↓
-Record Keeping
-````
+These processes can increase processing time and introduce opportunities for human error.
 
-This can result in:
+## 💡 The SmartLedger Approach
 
-* ⏳ Increased processing time
-* ❌ Human errors
-* 🔁 Duplicate invoices
-* ⚠️ Difficulty identifying suspicious records
-* 🔓 Weak document integrity controls
-* 📚 Large amounts of manual record keeping
-
-### The SmartLedger Approach
-
-SmartLedger AI creates a more automated workflow:
+SmartLedger AI brings these activities together into a single desktop platform.
 
 ```text
-              📄 INVOICE
-                  │
-                  ▼
-           🔎 OCR EXTRACTION
-                  │
-                  ▼
-          📋 DATA VALIDATION
-                  │
-                  ▼
-          🤖 AI ANALYSIS
-                  │
-            ┌─────┴─────┐
-            ▼           ▼
-        ✅ VERIFIED   ⚠️ SUSPICIOUS
-            │           │
-            └─────┬─────┘
-                  ▼
-          ⛓️ HASH / BLOCKCHAIN
-             VERIFICATION
-                  │
-                  ▼
-           📊 DASHBOARD
-                  │
-                  ▼
-          📄 REPORT GENERATION
+                 ┌─────────────────────┐
+                 │      📄 INVOICE      │
+                 └──────────┬──────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │    🔎 OCR ENGINE    │
+                 └──────────┬──────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │  📋 DATA VALIDATION │
+                 └──────────┬──────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │   🤖 AI ANALYSIS    │
+                 └──────────┬──────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │ 🛡️ FRAUD ANALYSIS   │
+                 └──────────┬──────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │ ⛓️ HASH VERIFICATION│
+                 └──────────┬──────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │   📊 DASHBOARD      │
+                 └──────────┬──────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │    📑 REPORTS       │
+                 └─────────────────────┘
 ```
 
 ---
@@ -119,51 +124,51 @@ SmartLedger AI creates a more automated workflow:
 
 ## 🔐 Secure Authentication
 
-SmartLedger AI provides an employee authentication system with:
-
 * Employee registration
-* Secure login
+* Employee login
 * Password hashing
 * Role-based access
-* Employee/Admin portal separation
+* Employee/Admin separation
 * Password visibility control
+* Forgot-password workflow
 
 ---
 
 ## 📄 Invoice Management
 
-Users can manage invoice records through the application.
+Users can manage invoice records through a centralized interface.
 
-### Supported operations include:
+### Capabilities
 
-* Upload invoice
-* View invoices
-* Search invoice records
-* Manage invoice information
-* View invoice details
-* Validate invoice information
+* Upload invoices
+* View invoice records
+* Search invoice information
+* Manage invoice details
+* Preview invoice information
+* Validate invoice records
+* Track invoice status
 
 ---
 
 ## 🔎 OCR Invoice Extraction
 
-The OCR module automatically extracts information from invoice documents.
+The OCR module extracts information from invoice documents and converts it into structured invoice data.
 
-### Example:
+### Processing Flow
 
 ```text
-Invoice Image
-      ↓
-OCR Engine
-      ↓
-Text Extraction
-      ↓
-Invoice Parser
-      ↓
-Structured Invoice Data
+Invoice Document
+       ↓
+   OCR Engine
+       ↓
+ Text Extraction
+       ↓
+ Invoice Parsing
+       ↓
+Structured Data
 ```
 
-Important information can include:
+Typical invoice information may include:
 
 | Field          | Example          |
 | -------------- | ---------------- |
@@ -172,38 +177,38 @@ Important information can include:
 | Date           | 2026-09-20       |
 | Amount         | ₹25,000          |
 
-This reduces the need for manual data entry.
-
 ---
 
-# 🤖 AI Fraud Detection
+# 🤖 AI-Assisted Fraud Detection
 
-The system analyzes invoice information to help identify potentially suspicious records.
+SmartLedger AI analyzes invoice information to help identify potentially suspicious records.
 
-The fraud detection workflow can consider factors such as:
+The analysis can consider:
 
 * Duplicate invoice information
 * Similar invoice records
 * Suspicious invoice values
-* Validation results
 * Existing invoice records
+* Validation results
+* Invoice-related patterns
 
-The dashboard provides a clear indication of:
+The application provides clear verification states such as:
 
 ```text
-🟢 Verified
-🔴 Fraud / Suspicious
+🟢 VERIFIED
+
+🔴 FRAUD / SUSPICIOUS
 ```
+
+> The fraud-detection component is an application-level analysis mechanism and can be extended with advanced machine-learning models in future versions.
 
 ---
 
-# ⛓️ Blockchain Integrity Verification
+# ⛓️ Blockchain-Inspired Integrity Verification
 
-One of the key security components of SmartLedger AI is its blockchain-inspired verification mechanism.
+SmartLedger AI uses a **hash-chain mechanism inspired by blockchain principles** to help protect invoice record integrity.
 
-Each blockchain record maintains a relationship with the previous record using cryptographic hashes.
-
-### Example
+Each block maintains a relationship with the previous block.
 
 ```text
 ┌─────────────────────────┐
@@ -213,8 +218,7 @@ Each blockchain record maintains a relationship with the previous record using c
 │ Current Hash            │
 │ Previous Hash = 0       │
 └────────────┬────────────┘
-             │
-             ▼
+             ↓
 ┌─────────────────────────┐
 │        BLOCK 2          │
 │                         │
@@ -222,8 +226,7 @@ Each blockchain record maintains a relationship with the previous record using c
 │ Previous Hash = Hash 1  │
 │ Current Hash            │
 └────────────┬────────────┘
-             │
-             ▼
+             ↓
 ┌─────────────────────────┐
 │        BLOCK 3          │
 │                         │
@@ -233,17 +236,13 @@ Each blockchain record maintains a relationship with the previous record using c
 └─────────────────────────┘
 ```
 
-If the relationship between blocks does not match, the system can detect a possible integrity problem.
+If the relationship between blocks does not match, the application can identify a potential integrity issue.
 
 ---
 
-# 🔑 What is the Hash?
+# 🔑 SHA-256 Hash Verification
 
-A **hash** is a cryptographic representation of data.
-
-SmartLedger AI uses hashing to create a unique digital representation of invoice/block information.
-
-Conceptually:
+Conceptually, the system creates a cryptographic representation of invoice/block information:
 
 ```text
 Invoice Data
@@ -252,64 +251,39 @@ Previous Hash
      +
 Timestamp
      ↓
- SHA-256
+   SHA-256
      ↓
-Current Hash
+ Current Hash
 ```
 
-A change in the underlying information results in a different hash.
-
-This helps the application detect unauthorized modification of stored blockchain records.
+A modification to the underlying information produces a different hash, allowing the system to detect potential changes to stored records.
 
 ---
 
 # 📊 Analytics Dashboard
 
-The dashboard provides a centralized overview of invoice activity.
+The dashboard provides a centralized view of invoice activity.
 
-### Dashboard metrics include:
+### Dashboard Information
 
-```text
-┌─────────────────┐
-│ Total Invoices  │
-│       6         │
-└─────────────────┘
-
-┌─────────────────┐
-│ Verified        │
-│       2         │
-└─────────────────┘
-
-┌─────────────────┐
-│ Fraud Detected  │
-│       4         │
-└─────────────────┘
-
-┌─────────────────┐
-│ Blockchain      │
-│ Blocks          │
-│       2         │
-└─────────────────┘
-```
-
-The dashboard also provides:
-
+* Total invoices
+* Verified invoices
+* Fraud/suspicious invoices
+* Blockchain blocks
 * Recent invoice records
 * Invoice status
 * Vendor information
-* Amount
-* Invoice date
+* Invoice amounts
+* Invoice dates
 * Quick actions
 
 ---
 
-# 📈 Reports
+# 📑 Reports
 
-The reporting module provides a way to generate and view invoice-related reports.
+The reporting module provides invoice-related reporting capabilities.
 
-The project includes support for report generation using technologies/libraries integrated into the application.
-
-Possible report formats include:
+Supported reporting workflows include:
 
 * 📄 PDF
 * 📊 Excel
@@ -319,25 +293,22 @@ Possible report formats include:
 
 # 👁️ Invoice Preview
 
-The application includes an invoice preview interface that allows users to inspect invoice information through the application before or after verification.
+The application includes an invoice preview interface that allows users to inspect invoice information before or after verification.
 
 ---
 
 # 🗄️ Database
 
-SmartLedger AI uses **MySQL** for persistent storage.
+SmartLedger AI uses **MySQL** for persistent data storage.
 
-### Main database tables
+### Database Structure
 
 ```text
 smart_invoice
 │
 ├── users
-│
 ├── invoice
-│
 ├── ocr_results
-│
 └── blockchain
 ```
 
@@ -357,7 +328,7 @@ created_at
 
 ### Invoice
 
-Stores invoice information.
+Stores invoice-related information.
 
 ```text
 invoice_id
@@ -373,86 +344,62 @@ created_at
 
 ### OCR Results
 
-Stores extracted OCR information.
+Stores information extracted from invoice documents.
 
 ### Blockchain
 
-Stores blockchain verification records and hash relationships.
+Stores hash-chain records used for integrity verification.
 
 ---
 
-# 🏗️ System Architecture
+# 🏗️ Architecture
 
 SmartLedger AI follows a modular layered architecture.
 
 ```text
-                 ┌──────────────────────┐
-                 │     User Interface   │
-                 │      Java Swing      │
-                 └──────────┬───────────┘
-                            │
-                            ▼
-                 ┌──────────────────────┐
-                 │    Service Layer     │
-                 │ Authentication       │
-                 │ OCR                  │
-                 │ Fraud Detection      │
-                 │ Blockchain           │
-                 └──────────┬───────────┘
-                            │
-                            ▼
-                 ┌──────────────────────┐
-                 │       DAO Layer      │
-                 │   JDBC / Database    │
-                 └──────────┬───────────┘
-                            │
-                            ▼
-                 ┌──────────────────────┐
-                 │        MySQL         │
-                 │      Database        │
-                 └──────────────────────┘
+┌─────────────────────────────────┐
+│         USER INTERFACE          │
+│            Java Swing           │
+└────────────────┬────────────────┘
+                 ↓
+┌─────────────────────────────────┐
+│          SERVICE LAYER          │
+│                                 │
+│ Authentication                 │
+│ OCR                            │
+│ Validation                     │
+│ Fraud Detection                │
+│ Blockchain Verification        │
+│ Reporting                      │
+│ Analytics                      │
+└────────────────┬────────────────┘
+                 ↓
+┌─────────────────────────────────┐
+│            DAO LAYER            │
+│          JDBC / DAO             │
+└────────────────┬────────────────┘
+                 ↓
+┌─────────────────────────────────┐
+│             MySQL               │
+│            Database             │
+└─────────────────────────────────┘
 ```
 
 ---
 
 # 🧩 Technology Stack
 
-## Programming Language
-
-**Java 17**
-
-## User Interface
-
-**Java Swing**
-
-## Database
-
-**MySQL**
-
-## Database Connectivity
-
-**JDBC**
-
-## Build Tool
-
-**Apache Maven**
-
-## OCR
-
-OCR technology integrated into the project for invoice text extraction.
-
-## Security
-
-* Password hashing
-* SHA-256 cryptographic hashing
-* Role-based authentication
-* Blockchain-style integrity verification
-
-## Reporting
-
-* PDF reporting
-* Excel reporting
-* CSV reporting
+| Technology               | Purpose                           |
+| ------------------------ | --------------------------------- |
+| **Java 17**              | Core application development      |
+| **Java Swing**           | Desktop user interface            |
+| **MySQL**                | Persistent database               |
+| **JDBC**                 | Database connectivity             |
+| **Apache Maven**         | Dependency and build management   |
+| **OCR**                  | Invoice text extraction           |
+| **SHA-256**              | Cryptographic hashing             |
+| **AI-assisted analysis** | Fraud/suspicious invoice analysis |
+| **Git & GitHub**         | Version control                   |
 
 ---
 
@@ -461,12 +408,28 @@ OCR technology integrated into the project for invoice text extraction.
 ```text
 SmartInvoiceVerification
 │
+├── database
+│
+├── docs
+│   └── screenshots
+│       ├── about-system.png
+│       ├── admin-login.png
+│       ├── analytics.png
+│       ├── blockchain.png
+│       ├── dashboard.png
+│       ├── fraud-detection.png
+│       ├── invoice-management.png
+│       ├── login.png
+│       ├── ocr-result.png
+│       ├── profile.png
+│       ├── register.png
+│       ├── reports.png
+│       └── upload-invoice.png
+│
 ├── src
 │   └── main
-│       │
 │       ├── java
 │       │   └── com.smartinvoice
-│       │       │
 │       │       ├── auth
 │       │       ├── blockchain
 │       │       ├── charts
@@ -489,6 +452,7 @@ SmartInvoiceVerification
 │           ├── images
 │           └── invoices
 │
+├── uploads
 ├── pom.xml
 ├── .gitignore
 └── README.md
@@ -496,21 +460,19 @@ SmartInvoiceVerification
 
 ---
 
-# 🚀 Application Workflow
-
-The complete workflow can be represented as:
+# 🔄 System Workflow
 
 ```text
                     START
                       │
                       ▼
-               🔐 Employee Login
+              🔐 Employee Login
                       │
                       ▼
-              📄 Upload Invoice
+               📄 Upload Invoice
                       │
                       ▼
-                 🔎 OCR
+                  🔎 OCR
                       │
                       ▼
               📋 Extract Data
@@ -519,22 +481,21 @@ The complete workflow can be represented as:
                 ✅ Validation
                       │
                       ▼
-               🤖 AI Analysis
+                🤖 AI Analysis
                       │
-             ┌────────┴────────┐
-             ▼                 ▼
-        ✅ VERIFIED        ⚠️ SUSPICIOUS
-             │                 │
-             └────────┬────────┘
+              ┌───────┴────────┐
+              ▼                ▼
+        🟢 VERIFIED      🔴 SUSPICIOUS
+              │                │
+              └───────┬────────┘
                       ▼
-              ⛓️ Blockchain
-                Verification
+              ⛓️ Hash Verification
                       │
                       ▼
                 📊 Dashboard
                       │
                       ▼
-                 📄 Reports
+                  📑 Reports
                       │
                       ▼
                      END
@@ -542,29 +503,29 @@ The complete workflow can be represented as:
 
 ---
 
-# 🛠️ Installation
+# 🚀 Installation
 
 ## Prerequisites
 
-Install the following:
+Install:
 
 * Java JDK 17+
 * IntelliJ IDEA
 * MySQL Server
-* Maven
+* Apache Maven
 
 ---
 
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/smartledger-ai.git
+git clone https://github.com/sachinrv30/smart-invoice-verification-ocr-blockchain.git
 ```
 
 Move into the project:
 
 ```bash
-cd smartledger-ai
+cd smart-invoice-verification-ocr-blockchain
 ```
 
 ---
@@ -573,7 +534,7 @@ cd smartledger-ai
 
 Open the cloned project in IntelliJ IDEA.
 
-Allow Maven to download the required dependencies.
+Allow Maven to download and configure the required dependencies.
 
 ---
 
@@ -585,18 +546,18 @@ Open MySQL and create:
 CREATE DATABASE smart_invoice;
 ```
 
-Create the required tables according to the database schema included with the project.
+Then execute the SQL schema provided in the project's `database` directory.
 
 ---
 
-## 4. Configure Database Password
+## 4. Configure Database Credentials
 
-The project does **not** store the database password directly in the source code.
+The database password should not be stored directly in the source code.
 
-Set the following environment variable:
+Set the environment variable:
 
 ```text
-SMARTLEDGER_DB_PASSWORD
+SMARTLEDGER_DB_PASSWORD=YOUR_PASSWORD
 ```
 
 In IntelliJ IDEA:
@@ -615,53 +576,58 @@ SMARTLEDGER_DB_PASSWORD=YOUR_PASSWORD
 
 ## 5. Run the Application
 
-Run the main class:
+Run the project's main application class from IntelliJ IDEA.
 
-```text
-Main.java
-```
-
-The application should start with the SmartLedger AI interface.
+The SmartLedger AI desktop interface should launch.
 
 ---
 
 # 🔐 Security
 
-Sensitive configuration values are intentionally excluded from the GitHub repository.
+Sensitive configuration values are intentionally excluded from the repository.
 
-The project uses:
+The database connection uses:
 
 ```text
-Environment Variables
-        ↓
-Database Credentials
-        ↓
+Environment Variable
+       ↓
+Database Credential
+       ↓
 JDBC Connection
+       ↓
+MySQL
 ```
 
-This prevents database passwords from being directly stored in the source code.
+Security-related mechanisms include:
+
+* Password hashing
+* Environment-based database credentials
+* SHA-256 hashing
+* Role-based authentication
+* Hash-chain integrity verification
+* `.gitignore` protection for sensitive configuration
 
 ---
 
-## 📸 Application Screenshots
+# 📸 Screenshots
 
-### 🔐 Employee Login
+## 🔐 Employee Login
 
 <p align="center">
-  <img src="docs/screenshots/login.png" alt="Employee Login" width="900">
+  <img src="docs/screenshots/login.png" alt="SmartLedger AI Employee Login" width="900">
 </p>
 
 ---
 
-### 📝 Employee Registration
+## 📝 Employee Registration
 
 <p align="center">
-  <img src="docs/screenshots/register.png" alt="Employee Registration" width="900">
+  <img src="docs/screenshots/register.png" alt="SmartLedger AI Registration" width="900">
 </p>
 
 ---
 
-### 🏠 SmartLedger AI Dashboard
+## 🏠 SmartLedger AI Dashboard
 
 <p align="center">
   <img src="docs/screenshots/dashboard.png" alt="SmartLedger AI Dashboard" width="900">
@@ -669,114 +635,125 @@ This prevents database passwords from being directly stored in the source code.
 
 ---
 
-### 📤 Upload Invoice
+## 📤 Upload Invoice
 
 <p align="center">
-  <img src="docs/screenshots/upload-invoice.png" alt="Upload Invoice" width="900">
+  <img src="docs/screenshots/upload-invoice.png" alt="SmartLedger AI Upload Invoice" width="900">
 </p>
 
 ---
 
-### 🔎 OCR Invoice Extraction
+## 🔎 OCR Invoice Extraction
 
 <p align="center">
-  <img src="docs/screenshots/ocr-result.png" alt="OCR Invoice Extraction" width="900">
+  <img src="docs/screenshots/ocr-result.png" alt="SmartLedger AI OCR Result" width="900">
 </p>
 
 ---
 
-### 🧾 Invoice Management
+## 🧾 Invoice Management
 
 <p align="center">
-  <img src="docs/screenshots/invoice-management.png" alt="Invoice Management" width="900">
+  <img src="docs/screenshots/invoice-management.png" alt="SmartLedger AI Invoice Management" width="900">
 </p>
 
 ---
 
-### ⛓️ Blockchain Verification
+## ⛓️ Blockchain Verification
 
 <p align="center">
-  <img src="docs/screenshots/blockchain.png" alt="Blockchain Verification" width="900">
+  <img src="docs/screenshots/blockchain.png" alt="SmartLedger AI Blockchain Verification" width="900">
 </p>
 
 ---
 
-### 🛡️ AI Fraud Detection
+## 🛡️ AI Fraud Detection
 
 <p align="center">
-  <img src="docs/screenshots/fraud-detection.png" alt="AI Fraud Detection" width="900">
+  <img src="docs/screenshots/fraud-detection.png" alt="SmartLedger AI Fraud Detection" width="900">
 </p>
 
 ---
 
-### 📊 Analytics Dashboard
+## 📊 Analytics Dashboard
 
 <p align="center">
-  <img src="docs/screenshots/analytics.png" alt="Analytics Dashboard" width="900">
+  <img src="docs/screenshots/analytics.png" alt="SmartLedger AI Analytics" width="900">
 </p>
 
 ---
 
-### 📑 Reports
+## 📑 Reports
 
 <p align="center">
-  <img src="docs/screenshots/reports.png" alt="Reports" width="900">
+  <img src="docs/screenshots/reports.png" alt="SmartLedger AI Reports" width="900">
 </p>
 
 ---
 
-### 👤 User Profile
+## 👤 User Profile
 
 <p align="center">
-  <img src="docs/screenshots/profile.png" alt="User Profile" width="900">
+  <img src="docs/screenshots/profile.png" alt="SmartLedger AI User Profile" width="900">
 </p>
 
 ---
 
-### 🔑 Administrator Login
+## 🔑 Administrator Login
 
 <p align="center">
-  <img src="docs/screenshots/admin-login.png" alt="Administrator Login" width="900">
+  <img src="docs/screenshots/admin-login.png" alt="SmartLedger AI Administrator Login" width="900">
 </p>
+
+> The current version provides an Administrator Login interface. A complete administrator management portal is planned as future development.
 
 ---
 
-### ℹ️ About System
+## ℹ️ About System
 
 <p align="center">
   <img src="docs/screenshots/about-system.png" alt="About SmartLedger AI" width="900">
 </p>
 
-The project currently includes an **Administrator Login interface**.
+---
 
-The complete administrator management portal is planned as a future enhancement.
+# 👨‍💼 Administrator Portal — Future Enhancement
 
-Future administrator capabilities can include:
+The current application includes an Administrator Login interface.
+
+A complete administrator management portal can be extended with:
 
 ```text
-Administrator
-      │
-      ├── 👥 Manage Employees
-      ├── 📄 Manage Invoices
-      ├── 📊 Analytics
-      ├── ⚠️ Fraud Monitoring
-      ├── 📑 Reports
-      └── ⛓️ Blockchain Audit
+                    ADMINISTRATOR
+                          │
+          ┌───────────────┼───────────────┐
+          ↓               ↓               ↓
+     👥 Employees      📄 Invoices     📊 Analytics
+          │               │               │
+          └───────────────┼───────────────┘
+                          ↓
+                  🛡️ Fraud Monitoring
+                          │
+                          ↓
+                     📑 Reports
+                          │
+                          ↓
+                  ⛓️ Blockchain Audit
 ```
 
 ---
 
 # 🌱 Future Scope
 
-SmartLedger AI can be extended with several advanced capabilities.
+SmartLedger AI can be extended with additional enterprise capabilities.
 
 ### ☁️ Cloud Deployment
 
-Deploy the system on cloud infrastructure for remote access and centralized management.
+Deploy the platform on cloud infrastructure for centralized remote access.
 
 ### 🤖 Advanced Machine Learning
 
-Train machine learning models using historical invoice data to improve fraud detection.
+Train advanced machine-learning models using historical invoice data for improved fraud analysis.
 
 ### 📱 Mobile Application
 
@@ -784,11 +761,11 @@ Develop Android and iOS applications for mobile invoice verification.
 
 ### 📧 Automated Notifications
 
-Send email/SMS notifications when invoices are verified or flagged.
+Send email or SMS notifications when invoices are verified or flagged.
 
 ### 🔗 QR Code Verification
 
-Generate QR codes for invoices and allow instant authenticity verification.
+Generate QR codes for invoices and enable instant authenticity verification.
 
 ### ✍️ Digital Signatures
 
@@ -796,33 +773,23 @@ Integrate digital signature verification for stronger document authenticity.
 
 ### 🏢 Multi-Organization Support
 
-Allow multiple companies and departments to securely use the same platform.
+Support multiple companies, departments and organizational roles.
 
 ### 🔌 ERP Integration
 
-Provide REST APIs for integration with ERP, accounting and enterprise systems.
+Provide REST APIs for integration with accounting, ERP and enterprise systems.
 
 ### 👨‍💼 Advanced Administrator Portal
 
-Implement complete administrative functionality including:
-
-* User management
-* Role management
-* Invoice management
-* System monitoring
-* Audit logs
-* Security controls
+Add complete user management, role management, audit logs, monitoring and administrative controls.
 
 ---
 
 # 🎓 Academic Project
 
-**Project:** SmartLedger AI
-**Title:** Smart Invoice Verification System using OCR, AI and Blockchain
+**Project Name:** SmartLedger AI
 
-**Developed By:**
-
-### Sachin RV
+**Project Title:** Smart Invoice Verification System using OCR, AI and Blockchain-Inspired Hash Verification
 
 **Program:** MCA
 
@@ -837,23 +804,23 @@ Extract invoice information
 
 🤖 AI
    ↓
-Analyze suspicious invoices
+Analyze potentially suspicious invoices
 
-⛓️ Blockchain
+⛓️ Hash Verification
    ↓
-Verify data integrity
+Verify invoice record integrity
 
 🔐 Security
    ↓
-Protect user access
+Protect application access
 
 📊 Analytics
    ↓
 Understand invoice activity
 
-📄 Reports
+📑 Reports
    ↓
-Generate useful records
+Generate verification records
 ```
 
 ---
@@ -862,26 +829,51 @@ Generate useful records
 
 ### 🟢 Core System Implemented
 
-The current version includes the major invoice verification workflow,
-authentication, OCR processing, invoice management, fraud detection,
-blockchain verification, analytics and reporting components.
+The current system includes:
+
+* Authentication
+* Invoice management
+* OCR processing
+* Invoice validation
+* Fraud/suspicious invoice analysis
+* Hash-based integrity verification
+* Analytics
+* Reporting
+* Invoice preview
+* Employee interface
+* Administrator login interface
 
 ### 🔵 Future Development
 
-The administrator management portal and additional enterprise-level
-features can be developed in future versions.
+The administrator management portal and additional enterprise-level capabilities can be developed in future versions.
 
 ---
 
 <div align="center">
 
-## 🚀 SmartLedger AI
+# ✨ Built to Make Invoice Verification Smarter
 
-### Making Invoice Verification Smarter, Safer and More Automated.
+### SmartLedger AI
 
-**Built with Java • MySQL • OCR • AI • Blockchain**
+**OCR • AI-Assisted Analysis • Secure Authentication • Hash-Based Integrity • Analytics • Reporting**
 
-⭐ If you find this project interesting, consider giving the repository a star!
+<br>
+
+## 👨‍💻 Designed & Developed By
+
+# **SACHIN R V**
+
+### MCA Student • Software Developer • AI & Application Development
+
+<br>
+
+<a href="https://github.com/sachinrv30">
+  <img src="https://img.shields.io/badge/GitHub-sachinrv30-181717?style=for-the-badge&logo=github" alt="GitHub">
+</a>
+
+<br><br>
+
+**© 2026 Sachin R V • SmartLedger AI**
 
 </div>
 ```
