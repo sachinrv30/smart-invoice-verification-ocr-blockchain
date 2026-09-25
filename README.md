@@ -1,8 +1,3 @@
-Absolutely. Below is the **complete README.md in one single copy-paste block**. Replace your entire current `README.md` with this.
-
-**Important:** Copy from `<div align="center">` all the way to the final `</div>`. Do **not** add another ` ```markdown ` before or after it.
-
-````markdown
 <div align="center">
 
 # 🚀 SmartLedger AI
@@ -876,4 +871,3 @@ The administrator management portal and additional enterprise-level capabilities
 **© 2026 Sachin R V • SmartLedger AI**
 
 </div>
-```
